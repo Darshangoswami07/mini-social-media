@@ -1,0 +1,33 @@
+.app-conatiner{
+  display: flex
+}
+.content {
+ width: 100%
+}
+.sidebar {
+  min-height: 830px;
+  width: 15%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.post-card{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: large;
+  min-width: 30rem;
+}
+
+.hastag {
+  margin:0px 3px
+}
+.reactions{
+  margin: 15px 0 0;
+}
+.createpost{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
