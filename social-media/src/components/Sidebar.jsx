@@ -47,7 +47,7 @@ function Sidebar({ selectedTab, setSelectedTab }) {
             >
               <use xlinkHref="#home"></use>
             </svg>
-            Home
+            Posts
           </a>{" "}
         </li>{" "}
         <li
