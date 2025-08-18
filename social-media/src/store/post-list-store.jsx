@@ -19,7 +19,7 @@ const postListReducer = (currPostList, action) => {
 function PostListProvider({ children }) {
 const[postList,dispatchPostList]= useReducer(
     postListReducer,
-    Default_Post_List
+    []
 );
     const addPost = (userId,postTittle,PostBody,Tags,reaction) => {
         dispatchPostList({
@@ -52,24 +52,5 @@ const[postList,dispatchPostList]= useReducer(
          } >{children}</PostList.Provider>
     )
 }
-
-const Default_Post_List=[
-    {
-        id:'1',
-        title:'Title 1',
-        body:'This is the body of post 1',
-        reaction: 5,
-        userId:'uder9',
-        tags:['tag1', 'tag2', 'tag3']
-    },
-    {
-        id:'2',
-        title:'Title 2',
-        body:'This is the body of post 2',
-        reaction: 10,
-        userId:'user10',
-        tags:['tag1', 'tag4']
-    }
-]
 
 export default PostListProvider;

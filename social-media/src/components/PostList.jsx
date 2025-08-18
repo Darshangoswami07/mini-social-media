@@ -7,6 +7,7 @@ function PostList() {
    
     return (
         <>
+        {postList.length === 0 && <WelcomeMessage />}
         {postList.map((post)=>(<Post key={post.id} post={post}/>))}
 
         </>
