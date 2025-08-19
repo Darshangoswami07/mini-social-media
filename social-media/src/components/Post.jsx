@@ -20,7 +20,7 @@ function Post({ post }) {
           <span key={tag} className="badge text-bg-primary hastag">{tag}</span>
         ))}
         <div className="alert alert-success reactions" role="alert">
-          This post reacted by {post.reactions} pepole
+          👍 Likes: {post.reactions.likes} | 👎 Dislikes: {post.reactions.dislikes} pepole
         </div>
       </div>
     </div>

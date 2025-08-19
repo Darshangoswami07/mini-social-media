@@ -1,9 +1,8 @@
 import React from 'react'
-function WelcomeMessage() {
+function WelcomeMessage({onGetPostClick}) {
     return (
-        <center>
-        <h1 className='welcomeHeading'>NO post found</h1>
-        <p className='welcomeMessage'>Start creating your first post!</p>
+        <center className='welcomeHeading'>
+        <h1 >NO post found yet!</h1>
         </center>
     )
 }
